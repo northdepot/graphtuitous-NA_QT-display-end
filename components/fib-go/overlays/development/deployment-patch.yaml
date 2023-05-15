@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fib-go
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/fib-go@sha256:eaf3d1f0ee8cf26815f72638350dba10a8501cb694f3309ec00aacd5f488d4b5
+        name: container-image
+        resources: {}
+status: {}

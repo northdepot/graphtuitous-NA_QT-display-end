@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fib-node
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/fib-node@sha256:377e23aef33a7c1120bcde20de099134dbe4ee712e48d6ef64daebdb5dd211e9
+        name: container-image
+        resources: {}
+status: {}
